@@ -6,6 +6,59 @@ body {
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.container { 
+    max-width: 1158px;
+    padding-left: 0 15px;  
+    margin: 0 auto;   
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.top-line {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.top-line-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 24px 0;
+    margin-right: 332px; 
+}
+
+.nav-link {
+    display: block;  
+}
+
+.contacts-lists {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 24px 0;
+    margin-right: auto;
+}
+
+.top-line-logo {
+    padding: 24px 0;
+    margin-right: 76px;
 }
 
 .logo {
@@ -52,6 +105,7 @@ ul {
 }
 
 .contacts .contacts-link {
+    display: block;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -75,6 +129,9 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
 }
 
 .hero-section-service {
@@ -86,11 +143,26 @@ ul {
     color: #fff;
     background: #4d5ae5;
     cursor: pointer;
+    margin: 0 auto;
+    display: block;
 }
 
 .hero-section-service:hover,
 .hero-section-service:focus {
     background: #404BBF
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .feature .feature-title {
@@ -101,6 +173,17 @@ ul {
     color: #2e2f42;
 }
 
+.feature-container {
+    margin: 120px auto;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.feature-card { 
+    width: calc((100% - 72px) / 4);
+}
+
 .feature .feature-text {
     font-weight: 400;
     font-size: 16px;
@@ -109,8 +192,22 @@ ul {
     color: #434455;
 }
 
+.feature-list {
+    display: flex;
+    align-items: center;
+    gap: 24px; 
+}
+
+.feature-title {
+    padding-bottom: 8px;
+}
+
 .team {
     background: #f4f4fd;
+}
+
+.team-container {
+    padding: 0 15px;
 }
 
 .team-title {
@@ -121,10 +218,20 @@ ul {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    padding-bottom: 72px;
 }
 
 .team-card {
     background: #fff;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.team-card-set {
+    display: flex;
+    align-items: center;
+    gap: 24px; 
 }
 
 .team-card-title {
@@ -145,6 +252,42 @@ ul {
     color: #434455;
 }
 
+.team-card-container {
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+}
+
+.team-card-img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.project-container {
+    padding: 0 15px;
+}
+
+.project-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 48px;
+  }
+
+  .project-card {
+    width: calc((100% - 48px) / 3);
+  }
+  
+  .project-card-container { 
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+  }
+
 .project-title {
     font-weight: 700;
     font-size: 36px;
@@ -153,6 +296,7 @@ ul {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    padding-bottom: 72px;
 }
 
 .project-name {
@@ -169,6 +313,21 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+
+.project-card-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    padding: 32px 16px;
+}
+
+.project-img {
+    max-width: 100%;
+    display: block;
+    height: auto;
 }
 
 .final-part {
@@ -196,4 +355,22 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+}
+
+.final-part-container {
+    padding: 100px 0;
+}
+
+.logo-final-part {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 0px;
+    padding-bottom: 16px;
+}
+
+.final-part-text {
+    text-align: left;
+    width: 264px;
 }
