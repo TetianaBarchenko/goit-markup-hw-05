@@ -43,13 +43,6 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.top-line-content {
-  max-width: 1158px;
-  padding: 0 15px;
-  display: flex;
-  margin: 0 auto;
-}
-
 .top-line-nav {
   display: flex;
   align-items: center;
