@@ -39,8 +39,6 @@ img {
 
 .top-line {
   border-bottom: 1px solid #e7e9fc;
-  /*width: 1158px;
-  padding: 0 15px;*/
 }
 
 .top-line-container {
@@ -57,7 +55,6 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
-  margin-right: 332px;
 }
 
 .nav-link {
@@ -69,7 +66,6 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
-  padding: 24px 0;
   margin-right: auto;
 }
 
@@ -145,7 +141,6 @@ img {
 
 .hero-section {
   background: #2e2f42;
-  padding: 188px 0;
 }
 
 .main-title {
@@ -204,7 +199,6 @@ img {
 }
 
 .feature-container {
-  margin: 120px auto;
   display: flex;
   align-items: center;
   padding: 0 15px;
@@ -229,7 +223,6 @@ img {
 }
 
 .feature-title {
-  padding-bottom: 8px;
   margin-bottom: 8px;
 }
 
@@ -249,7 +242,6 @@ img {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  padding-bottom: 72px;
   margin-bottom: 72px;
 }
 
@@ -290,7 +282,6 @@ img {
   justify-content: center;
   flex-direction: column;
   gap: 8px;
-  display: flex;
   align-items: center;
   padding: 32px 0;
 }
@@ -324,7 +315,6 @@ img {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  padding-bottom: 72px;
   margin-bottom: 72px;
 }
 
@@ -346,7 +336,6 @@ img {
 }
 
 .project-card-container {
-  display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
@@ -382,17 +371,12 @@ img {
   color: #f4f4fd;
 }
 
-.final-part-container {
-  padding: 100px 0;
-}
-
 .logo-final-part {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
   gap: 0px;
-  padding-bottom: 16px;
   display: inline-block;
   margin-bottom: 16px;
 }
