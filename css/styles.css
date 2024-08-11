@@ -39,6 +39,7 @@ img {
 
 .top-line {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .top-line-container {
@@ -106,11 +107,28 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list .nav-link:hover,
-.nav-list .nav-link:focus {
+.nav-list .nav-link:focus,
+.nav-link.current {
   color: #404bbf;
+}
+
+.nav-link.current {
+  position: relative;
+}
+
+.nav-link.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
 }
 
 .contacts {
@@ -132,6 +150,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts .contacts-link:hover,
@@ -140,8 +159,13 @@ img {
 }
 
 .hero-section {
-  background: #2e2f42;
+  background-color: #2e2f42;
   padding: 188px 0;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: 1440px 600px;
+  background-position: center center;
+  background-color: rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7);
 }
 
 .main-title {
@@ -207,6 +231,18 @@ img {
 
 .feature-card {
   width: calc((100% - 72px) / 4);
+}
+
+.feature-icons {
+  display: flex;
+  width: 264px;
+  height: 112px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background: #f4f4fd;
+  margin-bottom: 8px;
+  justify-content: center;
+  align-items: center;
 }
 
 .feature .feature-text {
@@ -287,6 +323,38 @@ img {
   padding: 32px 0;
 }
 
+.team-social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+  padding-top: 8px;
+}
+
+.team-social-links .link-t {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  text-transform: uppercase;
+  transition-property: background-color;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 150ms;
+}
+
+.team-social-links .link-t:hover {
+  background-color: #404BBF;
+}
+
+.icon-t {
+  fill:#fff;
+}
+
 .project-container {
   padding: 0 15px;
 }
@@ -300,6 +368,33 @@ img {
 
 .project-card {
   width: calc((100% - 48px) / 3);
+}
+
+.project-card:hover .project-hidden-text {
+  transform: translate(0);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.project-img-tumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-hidden-text {
+  position: absolute;
+  top: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  height: 100%;
+  padding: 20px;
+  padding-left: 32px;
+  padding-right: 32px;
+  transform: translateY(100%);
+  transition: transform 500ms linear 150ms;
 }
 
 .project-card-container {
@@ -337,6 +432,7 @@ img {
 }
 
 .project-card-container {
+  display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
@@ -347,6 +443,10 @@ img {
 .final-part {
   background: #2e2f42;
   padding: 100px 0;
+}
+
+.final-part-container {
+  display: flex;
 }
 
 .logo-f-p {
@@ -385,4 +485,48 @@ img {
 .final-part-text {
   text-align: left;
   width: 264px;
+}
+
+.social-media-f {
+  padding-left: 120px;
+}
+
+.final-part-social {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  padding-bottom: 16px;
+}
+
+.final-part-social-links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.final-part-social-links .link-f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  text-transform: uppercase;
+  transition-property: background-color;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 150ms;
+}
+
+.final-part-social-links .link-f:hover {
+  background-color: #31D0AA;
+}
+
+.icon-f {
+  fill:#fff;
 }
