@@ -680,14 +680,17 @@ img {
 
 .icon-off:hover,
 .icon-off:focus {
-  fill: #ffffff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.botton-off:hover .icon-off, 
+.botton-off:focus .icon-off {
+  fill: #ffffff;
 }
 
 .botton-off:hover,
 .botton-off:focus {
   background-color: #404bbf;
-  fill: #ffffff;
   border: none; 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -707,7 +710,6 @@ img {
   height: 58px;
   top: 112px;
   right: 24px;
-  padding-left: 24px;
   margin-bottom: 8px;
 }
 
@@ -765,7 +767,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  padding-left: 24px;
   margin-bottom: 16px;
   }
 
